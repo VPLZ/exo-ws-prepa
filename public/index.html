@@ -10,7 +10,7 @@
   <p class="text-white font-bold flex items-center justify-center text-3xl w-1/2 h-10">Évaluation de formateurs</p>
   <button class="w-10"><img src="./login.png" alt="login"></button>
 </header>
-<body class="font-mono">
+<body class="font-mono w-full">
   <div class="mt-10 inline gap-32 w-full">
     <h1 class="bg-blue-400 p-3 text-3xl inline">Formation tortue</h1>
     <div class="gap-5 inline p-3">
@@ -18,44 +18,8 @@
       <p class="p-3">(Disponible dans <span id="time_left"></span>)</p>
     </div>
   </div>
-  <canvas id="chart" aria-label="chart" role="img" class="w-full max-w-2xl"></canvas>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
-  <script>
-      const ctx = document.getElementById('myChart').getContext('2d');
-      const myChart = new Chart(ctx, {
-          type: 'bar',
-          data: {
-              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-              datasets: [{
-                  label: '# of Votes',
-                  data: [12, 19, 3, 5, 2, 3],
-                  backgroundColor: [
-                      'rgba(255, 99, 132, 0.2)',
-                      'rgba(54, 162, 235, 0.2)',
-                      'rgba(255, 206, 86, 0.2)',
-                      'rgba(75, 192, 192, 0.2)',
-                      'rgba(153, 102, 255, 0.2)',
-                      'rgba(255, 159, 64, 0.2)'
-                  ],
-                  borderColor: [
-                      'rgba(255, 99, 132, 1)',
-                      'rgba(54, 162, 235, 1)',
-                      'rgba(255, 206, 86, 1)',
-                      'rgba(75, 192, 192, 1)',
-                      'rgba(153, 102, 255, 1)',
-                      'rgba(255, 159, 64, 1)'
-                  ],
-                  borderWidth: 1
-              }]
-          },
-          options: {
-              scales: {
-                  y: {
-                      beginAtZero: true
-                  }
-              }
-          }
-      });
-  </script>
+  <canvas id="chart" aria-label="chart" role="img" class="w-full max-w-xl"></canvas>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

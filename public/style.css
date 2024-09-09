@@ -586,8 +586,8 @@ video {
   width: 100%;
 }
 
-.max-w-2xl {
-  max-width: 42rem;
+.max-w-xl {
+  max-width: 36rem;
 }
 
 .items-center {
@@ -647,4 +647,8 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+canvas{
+  max-height: 600px;
 }

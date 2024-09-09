@@ -5,3 +5,6 @@
 .inline{
   @apply flex justify-center items-center;
 }
+canvas{
+  max-height: 600px;
+}
