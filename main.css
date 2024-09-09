@@ -2,3 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
+.inline{
+  @apply flex justify-center items-center;
+}
